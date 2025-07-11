@@ -5,7 +5,7 @@ function Header() {
     <div className="Header">
       <header className="Header-header">
             <div className='divleft'>
-                 <img src={logo} className="Header-logo" alt="logo" />
+                 <a href="/"><img src={logo} className="Header-logo" alt="logo" /></a>
                  <h1 className="Header-title">Le village de Pré-au-lard</h1>
             </div>
 

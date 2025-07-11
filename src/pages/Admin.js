@@ -3,12 +3,12 @@ import '../scss/app.scss';
 import Header from '../layouts/Header';
 import Footer from '../layouts/Footer';
 
-function Home() {
+function Admin() {
   return (
 
-    <div className="Home">
+    <div className="Admin">
           <Header />
-          <div className='home-container'>
+          <div className='admin-container'>
                <div className='banner'>
                     <h1>Pré-au-lard</h1>
                </div>
@@ -65,4 +65,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Admin;
