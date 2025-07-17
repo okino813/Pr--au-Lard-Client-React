@@ -8,9 +8,10 @@ import 'axios';
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 
 import AdminUsers from "./admin-dashboard/pages/Users";
-import AdminBlog from "./admin-dashboard/pages/Blog";
-import AdminBlogCreate from "./admin-dashboard/pages/CreatePost";
+import AdminPlace from "./admin-dashboard/pages/Place";
+import AdminPlaceCreate from "./admin-dashboard/pages/CreatePlace";
 import AdminCategoryCreate from "./admin-dashboard/pages/CreateCategory";
+import AdminCategory from "./admin-dashboard/pages/Category";
 import Test from "./admin-dashboard/pages/Test";
 
 function App() {
@@ -25,9 +26,10 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/admin/users" element={<AdminUsers />} />
-            <Route path="/admin/blog" element={<AdminBlog />} />
-            <Route path="/admin/place/create" element={<AdminBlogCreate />} />
+            <Route path="/admin/places" element={<AdminPlace />} />
+            <Route path="/admin/place/create" element={<AdminPlaceCreate />} />
             <Route path="/admin/category/create" element={<AdminCategoryCreate />} />
+            <Route path="/admin/category/" element={<AdminCategory />} />
             <Route path="/admin" element={<Admin />} />
             <Route path="/test" element={<Test />} />
             <Route path="/login" element={<Login />} />

@@ -1,22 +1,84 @@
-.content{
-     .form-create-place{
+.Admin {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  .headerAdmin {
+    display: flex;
+    flex: 1;
+
+    .main {
+      flex: 1;
+      padding: 2rem;
+      background-color: #f9f9f9;
+
+      .content {
+        background: white;
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+        h2 {
+          font-size: 1.5rem;
+          font-weight: bold;
+          margin-bottom: 1.5rem;
+          color: #111827;
+        }
+
+        .form-create-place {
           display: flex;
           flex-direction: column;
+          gap: 1.5rem;
 
-          width: 20%;
-          gap: 20px;
+          .item {
+            display: flex;
+            flex-direction: column;
 
-          .item{
-               display: flex;
-               flex-direction: column;
+            label {
+              font-weight: 600;
+              margin-bottom: 0.5rem;
+              color: #374151; // Gray-700
+            }
 
-               label{
-                    font-weight: 600;
-               }
+            input,
+            textarea,
+            select {
+              padding: 0.5rem 0.75rem;
+              border: 1px solid #d1d5db; // Gray-300
+              border-radius: 4px;
+              font-size: 1rem;
+              background-color: #f9fafb;
 
-               textarea{
-                    height: 100px;
-               }
+              &:focus {
+                border-color: #2563eb; // Blue-600
+                outline: none;
+                background-color: white;
+              }
+            }
+
+            textarea {
+              min-height: 100px;
+              resize: vertical;
+            }
           }
-     }
+
+          input[type="submit"] {
+            align-self: start;
+            padding: 0.5rem 1.25rem;
+            background-color: #10b981; // Emerald-500
+            color: white;
+            font-weight: bold;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.2s;
+
+            &:hover {
+              background-color: #059669; // Emerald-600
+            }
+          }
+        }
+      }
+    }
+  }
 }

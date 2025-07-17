@@ -78,7 +78,7 @@ export default function CreateCategory() {
                     <div className="main">
                          <div className="content">
                               <h2>Crée une catégorie</h2>
-                              <form onSubmit={handleSubmit(onSubmit)} className="form-create-place">
+                              <form onSubmit={handleSubmit(onSubmit)} className="form-create-category">
                                    <div className="item">
                                         <label>Nom</label>
                                         <input {...register("name", { required: true })} />

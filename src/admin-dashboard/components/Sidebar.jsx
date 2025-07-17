@@ -10,10 +10,10 @@ const Sidebar = () => {
       <a href="/admin/users">
         <span class="icon"></span> Utilisateurs
       </a>
-      <a href="/admin/blog">
+      <a href="/admin/places">
         <span class="icon"></span> Articles
       </a>
-      <a href="/admin/category/create">
+      <a href="/admin/category">
         <span class="icon"></span> Categories
       </a>
       <a href="/admin/settings">

@@ -3,7 +3,7 @@ import axios from "axios"
 import { useEffect, useState } from "react"
 import Header from "../../layouts/Header";
 import Footer from "../../layouts/Footer";
-import AdminSidebar from "../../admin-dashboard/components/Sidebar";
+import AdminSidebar from "../components/Sidebar";
 
 export default function CreatePost() {
 
