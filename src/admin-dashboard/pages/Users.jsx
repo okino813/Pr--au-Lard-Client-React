@@ -5,6 +5,40 @@ import Footer from "../../layouts/Footer";
 import AdminSidebar from "../../admin-dashboard/components/Sidebar";
 
 const Users = () => {
+
+   const [user, setUser] = useState(null);
+     const [loading, setLoading] = useState(true);
+
+     useEffect(() => {
+          const fetchUser = async () => {
+               const token = localStorage.getItem("token");
+               if (!token) {
+                    window.location.href = "/login";
+                    return;
+               }
+
+               try {
+                    const res = await axios.get("http://localhost:8000/api/currentuser", {
+                         headers: {
+                              Authorization: `Bearer ${token}`,
+                              Accept: "application/json",
+                         },
+                    });
+
+                    setUser(res.data.data.user);
+               } catch (err) {
+                    console.error(err);
+                    localStorage.removeItem("token");
+                    window.location.href = "/login";
+               } finally {
+                    setLoading(false);
+               }
+          };
+
+          fetchUser();
+     }, []);
+
+     
   const [users, setUsers] = useState([]);
 
   useEffect(() => {

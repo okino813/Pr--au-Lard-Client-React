@@ -13,6 +13,9 @@ const Sidebar = () => {
       <a href="/admin/blog">
         <span class="icon"></span> Articles
       </a>
+      <a href="/admin/category/create">
+        <span class="icon"></span> Categories
+      </a>
       <a href="/admin/settings">
         <span class="icon"></span> Paramètres
       </a>

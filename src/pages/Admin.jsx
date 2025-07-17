@@ -44,11 +44,10 @@ const Admin = () => {
 
   return (
     <div className="Admin">
-
-     <Header />
-     <div className="headerAdmin">
-          <AdminSidebar />
-          <div className="main">
+      <Header />
+      <div className="headerAdmin">
+        <AdminSidebar />
+        <div className="main">
 
             <div className="content">
 
@@ -66,8 +65,7 @@ const Admin = () => {
                   <li>→ Guide : créer une API REST</li>
                 </ul>
               </div>
-          </div>
-      
+            </div>
           </div>
      </div>
 
