@@ -94,6 +94,7 @@ const Places = () => {
                     <td className="p-2">{place.longitude}</td>
                     <td className="p-2">{place.slug}</td>
                     <td className="p-2">{place.category.name}</td>
+                    <td className="p-2"><a href={`/admin/place/edit/${place.id}`}>Edit</a></td>
                   </tr>
                 ))}
               </tbody>

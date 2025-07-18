@@ -9,6 +9,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-d
 
 import AdminUsers from "./admin-dashboard/pages/Users";
 import AdminPlace from "./admin-dashboard/pages/Place";
+import AdminPlaceEdit from "./admin-dashboard/pages/EditPlace";
 import AdminPlaceCreate from "./admin-dashboard/pages/CreatePlace";
 import AdminCategoryCreate from "./admin-dashboard/pages/CreateCategory";
 import AdminCategory from "./admin-dashboard/pages/Category";
@@ -27,6 +28,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/admin/users" element={<AdminUsers />} />
             <Route path="/admin/places" element={<AdminPlace />} />
+            <Route path="/admin/place/edit/:id" element={<AdminPlaceEdit />} />
             <Route path="/admin/place/create" element={<AdminPlaceCreate />} />
             <Route path="/admin/category/create" element={<AdminCategoryCreate />} />
             <Route path="/admin/category/" element={<AdminCategory />} />
