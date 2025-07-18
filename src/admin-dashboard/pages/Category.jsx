@@ -75,6 +75,7 @@ const Categorys = () => {
                                              <th className="p-2 border">Nom</th>
                                              <th className="p-2 border">Slug</th>
                                              <th className="p-2 border">Couleur</th>
+                                             <th className="p-2 border">Action</th>
                                         </tr>
                                    </thead>
                                    <tbody>
@@ -83,6 +84,7 @@ const Categorys = () => {
                                                   <td className="p-2">{cat.name}</td>
                                                   <td className="p-2">{cat.slug}</td>
                                                   <td className="p-2">{cat.color}</td>
+                                                  <td className="p-2"><a href={`/admin/category/edit/${cat.id}`}>Edit</a></td>
                                              </tr>
                                         ))}
                                    </tbody>

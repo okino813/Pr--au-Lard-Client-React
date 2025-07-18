@@ -82,6 +82,7 @@ const Places = () => {
                   <th className="p-2 border">longitude</th>
                   <th className="p-2 border">slug</th>
                   <th className="p-2 border">Catégorie</th>
+                  <th className="p-2 border">Action</th>
                 </tr>
               </thead>
               <tbody>

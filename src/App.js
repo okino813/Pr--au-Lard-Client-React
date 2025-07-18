@@ -13,6 +13,7 @@ import AdminPlaceEdit from "./admin-dashboard/pages/EditPlace";
 import AdminPlaceCreate from "./admin-dashboard/pages/CreatePlace";
 import AdminCategoryCreate from "./admin-dashboard/pages/CreateCategory";
 import AdminCategory from "./admin-dashboard/pages/Category";
+import AdminCategoryEdit from "./admin-dashboard/pages/CategoryEdit";
 import Test from "./admin-dashboard/pages/Test";
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
             <Route path="/admin/place/create" element={<AdminPlaceCreate />} />
             <Route path="/admin/category/create" element={<AdminCategoryCreate />} />
             <Route path="/admin/category/" element={<AdminCategory />} />
+            <Route path="/admin/category/edit/:id" element={<AdminCategoryEdit />} />
             <Route path="/admin" element={<Admin />} />
             <Route path="/test" element={<Test />} />
             <Route path="/login" element={<Login />} />
