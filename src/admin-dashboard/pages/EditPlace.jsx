@@ -71,6 +71,7 @@ export default function EditPlace() {
                          category: place.id_category,
                          latitude: place.latitude,
                          longitude: place.longitude,
+                         color: place.color,
                          slug: place.slug,
                     });
                })
@@ -87,6 +88,7 @@ export default function EditPlace() {
           formData.append("longitude", data.longitude);
           formData.append("slug", data.slug);
           formData.append("id_category", data.category);
+          formData.append("color", data.color);
           formData.append("id_user", user.id);
 
           try {
@@ -100,12 +102,14 @@ export default function EditPlace() {
                          },
                     }
                );
+               console.log(response);
                if (response.status === 200) {
-                    alert("Place modifiée avec succès !");
+                    // alert("Place modifiée avec succès !");
                     setImageFile(null);
                } else if (response.status === 422) {
                     alert("Slug déjà utilisé");
                }
+
           } catch (error) {
                alert(error);
           }
@@ -153,6 +157,10 @@ export default function EditPlace() {
                                    <div className="item">
                                         <label>Longitude</label>
                                         <input {...register("longitude", { required: true })} />
+                                   </div>
+                                   <div className="item">
+                                        <label>Couleur</label>
+                                        <input {...register("color", { required: true })} />
                                    </div>
                                    <div className="item">
                                         <label>Slug</label>

@@ -52,7 +52,6 @@ export default function CreatePost() {
                }
           })
                .then(res => {
-                    // Ensure categories is always an array
                     setCategories(res.data.data.cat)
                }
                )
@@ -68,6 +67,7 @@ export default function CreatePost() {
           formData.append("img_preview", imageFile)
           formData.append("latitude", data.latitude)
           formData.append("longitude", data.longitude)
+          formData.append("color", data.color)
           formData.append("slug", data.slug)
           formData.append("id_category", data.category)
           formData.append("id_user", user.id)
@@ -84,7 +84,7 @@ export default function CreatePost() {
                     }
                )
                if (response.status === 200) {
-                    alert("Post créé avec succès !")
+                    window.location.href = "/admin/places"
                     reset()
                     setImageFile(null)
                } else if(response.status == 422){
@@ -142,6 +142,11 @@ export default function CreatePost() {
                                    <div className="item">
                                         <label>Longitude</label>
                                         <input {...register("longitude", { required: true })} />
+                                   </div>
+
+                                   <div className="item">
+                                        <label>Couleur</label>
+                                        <input {...register("color", { required: true })} />
                                    </div>
 
                                    <div className="item">

@@ -10,12 +10,12 @@ function Footer() {
             </div>
 
             <div className='divright'>
-               <p><a href="#">Accueil</a></p>
+               <p><a href="/">Accueil</a></p>
                <p><a href="#">Qui somme nous ?</a></p>
                <p><a href="#">Blog</a></p>
                <p><a href="#">Mentions légales</a></p>
                <p><a href="#">Contacter le gérant du site</a></p>
-               <p><a href="admin/">Espace Administrateur</a></p>
+               <p><a href="/admin/">Espace Administrateur</a></p>
             </div>
           </div>
 

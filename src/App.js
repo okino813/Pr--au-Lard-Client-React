@@ -15,6 +15,9 @@ import AdminCategoryCreate from "./admin-dashboard/pages/CreateCategory";
 import AdminCategory from "./admin-dashboard/pages/Category";
 import AdminCategoryEdit from "./admin-dashboard/pages/CategoryEdit";
 import Test from "./admin-dashboard/pages/Test";
+import Places from "./admin-dashboard/pages/Place";
+import Users from "./admin-dashboard/pages/Users";
+import Place from "./pages/Place";
 
 function App() {
 
@@ -27,7 +30,8 @@ function App() {
         <div className="flex-1">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/admin/users" element={<AdminUsers />} />
+            <Route path="/place/:slugCategory/:slugPlace/" element={<Place />} />
+            <Route path="/admin/users" element={<Users />} />
             <Route path="/admin/places" element={<AdminPlace />} />
             <Route path="/admin/place/edit/:id" element={<AdminPlaceEdit />} />
             <Route path="/admin/place/create" element={<AdminPlaceCreate />} />
