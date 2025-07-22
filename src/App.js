@@ -15,10 +15,11 @@ import AdminCategoryCreate from "./admin-dashboard/pages/CreateCategory";
 import AdminCategory from "./admin-dashboard/pages/Category";
 import AdminCategoryEdit from "./admin-dashboard/pages/CategoryEdit";
 import Test from "./admin-dashboard/pages/Test";
-import Places from "./admin-dashboard/pages/Place";
 import Users from "./admin-dashboard/pages/Users";
 import Place from "./pages/Place";
 import Blog from "./pages/Blog";
+import WhoWeAre from "./pages/WhoWeAre";
+import MentionLegale from "./pages/Metion-legale";
 
 function App() {
 
@@ -32,6 +33,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/whoweare" element={<WhoWeAre />} />
+            <Route path="/mentions-legales" element={<MentionLegale />} />
             <Route path="/place/:slugCategory/:slugPlace/" element={<Place />} />
             <Route path="/admin/users" element={<Users />} />
             <Route path="/admin/places" element={<AdminPlace />} />
