@@ -18,6 +18,7 @@ import Test from "./admin-dashboard/pages/Test";
 import Places from "./admin-dashboard/pages/Place";
 import Users from "./admin-dashboard/pages/Users";
 import Place from "./pages/Place";
+import Blog from "./pages/Blog";
 
 function App() {
 
@@ -30,6 +31,7 @@ function App() {
         <div className="flex-1">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/blog" element={<Blog />} />
             <Route path="/place/:slugCategory/:slugPlace/" element={<Place />} />
             <Route path="/admin/users" element={<Users />} />
             <Route path="/admin/places" element={<AdminPlace />} />
